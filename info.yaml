@@ -1,38 +1,41 @@
-# Tiny Tapeout project information (Wokwi project)
+# Proyecto avanzado 1 - Display de 7 segmentos
+# OBLIGATORIO: sustituir wokwi_id: 0 por el ID del proyecto donde guardes ESTE circuito.
+# El 0 es un marcador, NO un ID valido para compilar.
 project:
-  wokwi_id:     476507117434138625
-  title:        "Detector de secuencia 173"
-  author:       "Beltrame_Martinez"
-  discord:      ""
-  description:  "numero 173 (10101101)"
-  language:     "Wokwi"
-  clock_hz:     10000
-
+  wokwi_id: 476596017759297537
+  title: "Decodificador de 3 bits a 7 segmentos"
+  author: "Beltrame_Martinez"
+  discord: ""
+  description: "Decodificador de 3 bits que muestra 0 a 7 en un display de catodo comun"
+  language: "Wokwi"
+  # Se conserva 10000 de la configuracion anterior, siguiendo la consigna.
+  # El circuito es combinacional: no utiliza el reloj.
+  clock_hz: 10000
   tiles: "1x1"
 
-# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# Conservar todos los pines; dejar vacios los que no se utilizan.
 pinout:
-  # Inputs
-  ui[0]: "in_INPUT"
-  ui[1]: ""
-  ui[2]: ""
+  # Entradas
+  ui[0]: "in_0"
+  ui[1]: "in_1"
+  ui[2]: "in_2"
   ui[3]: ""
   ui[4]: ""
   ui[5]: ""
   ui[6]: ""
   ui[7]: ""
 
-  # Outputs
-  uo[0]: "out_OUT"
-  uo[1]: ""
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: ""
-  uo[5]: ""
-  uo[6]: ""
+  # Salidas
+  uo[0]: "out_A"
+  uo[1]: "out_B"
+  uo[2]: "out_C"
+  uo[3]: "out_D"
+  uo[4]: "out_E"
+  uo[5]: "out_F"
+  uo[6]: "out_G"
   uo[7]: ""
 
-  # Bidirectional pins
+  # Pines bidireccionales sin uso
   uio[0]: ""
   uio[1]: ""
   uio[2]: ""
@@ -42,5 +45,6 @@ pinout:
   uio[6]: ""
   uio[7]: ""
 
-# Do not change!
+# No cambiar.
 yaml_version: 6
+
